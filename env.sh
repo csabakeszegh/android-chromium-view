@@ -10,7 +10,7 @@
 #
 # we use this to scp the files from a fresh chromium build over
 # to our android library projects
-export BUILD=crbuild@ubuntu.local:chromium/src
+export BUILD=csaba@ng-ubuntu:/mnt/chromium/chromium/src
 
 # this should point to the cwd - i.e. the path to this directory
 # modify this to point wherever you checked this project out to

@@ -9,9 +9,17 @@ package org.chromium.content_shell;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int select_dialog_multichoice=0x7f010000;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int select_dialog_singlechoice=0x7f010001;
     }
     public static final class color {
-        public static final int color_picker_border_color=0x7f050000;
+        public static int color_picker_border_color=0x7f060000;
     }
     public static final class dimen {
         /** 
@@ -19,119 +27,152 @@ public final class R {
 	     of the seek bar icon.
     
          */
-        public static final int color_picker_gradient_margin=0x7f060000;
+        public static int color_picker_gradient_margin=0x7f070000;
+        /**  Left/right padding for infobar button text. 
+         */
+        public static int infobar_button_horizontal_padding=0x7f070005;
+        /**  Text size of text inside InfoBar buttons. 
+         */
+        public static int infobar_button_text_size=0x7f070002;
+        /**  Dimension (height or width) of the InfoBar icon. 
+         */
+        public static int infobar_icon_size=0x7f070007;
+        /**  Margin between items in an InfoBar. 
+         */
+        public static int infobar_margin=0x7f070004;
+        /**  Minimum dimension (height or width) of the upper row of an InfoBar. 
+         */
+        public static int infobar_min_size=0x7f070003;
+        /**  Infobar dimensions 
+ Text size of the InfoBar message. 
+         */
+        public static int infobar_text_size=0x7f070001;
+        /**  Minimum height for a touch target. 
+         */
+        public static int infobar_touch_target_height=0x7f070006;
         /**  Link Preview dimensions 
          */
-        public static final int link_preview_overlay_radius=0x7f060001;
+        public static int link_preview_overlay_radius=0x7f070008;
     }
     public static final class drawable {
-        public static final int autofill_popup_background=0x7f020000;
-        public static final int autofill_popup_background_down=0x7f020001;
-        public static final int autofill_popup_background_up=0x7f020002;
-        public static final int color_picker_advanced_select_handle=0x7f020003;
-        public static final int color_picker_border=0x7f020004;
-        public static final int divider_horizontal_bright=0x7f020005;
-        public static final int ic_menu_search_holo_light=0x7f020006;
-        public static final int ic_menu_share_holo_light=0x7f020007;
-        public static final int ondemand_overlay=0x7f020008;
-        public static final int progress=0x7f020009;
+        public static int autofill_popup_background=0x7f020000;
+        public static int autofill_popup_background_down=0x7f020001;
+        public static int autofill_popup_background_up=0x7f020002;
+        public static int color_picker_advanced_select_handle=0x7f020003;
+        public static int color_picker_border=0x7f020004;
+        public static int ic_menu_search_holo_light=0x7f020005;
+        public static int ic_menu_share_holo_light=0x7f020006;
+        public static int ondemand_overlay=0x7f020007;
+        public static int progress=0x7f020008;
     }
     public static final class id {
-        public static final int ampm=0x7f080019;
-        public static final int autofill_label=0x7f080002;
-        public static final int autofill_menu_text=0x7f080001;
+        public static int ampm=0x7f090018;
+        public static int autofill_label=0x7f090002;
+        public static int autofill_menu_text=0x7f090001;
         /**  AutofillPopup constants 
          */
-        public static final int autofill_popup_window=0x7f080000;
-        public static final int autofill_sublabel=0x7f080003;
-        public static final int color_picker_advanced=0x7f080008;
-        public static final int color_picker_simple=0x7f08000a;
-        public static final int color_picker_simple_border=0x7f080009;
-        public static final int container=0x7f08001a;
-        public static final int contentview_holder=0x7f08001f;
-        public static final int date_picker=0x7f080011;
-        public static final int gradient=0x7f080006;
-        public static final int gradient_border=0x7f080005;
-        public static final int hour=0x7f080013;
-        public static final int milli=0x7f080018;
-        public static final int minute=0x7f080014;
-        public static final int more_colors_button=0x7f08000c;
-        public static final int more_colors_button_border=0x7f08000b;
-        public static final int next=0x7f08001e;
-        public static final int pickers=0x7f080020;
-        public static final int position_in_year=0x7f080021;
-        public static final int prev=0x7f08001d;
-        public static final int second=0x7f080016;
-        public static final int second_colon=0x7f080015;
-        public static final int second_dot=0x7f080017;
-        public static final int seek_bar=0x7f080007;
-        public static final int selected_color_view=0x7f08000f;
-        public static final int selected_color_view_border=0x7f08000e;
-        public static final int shell_container=0x7f080010;
-        public static final int text=0x7f080004;
-        public static final int time_picker=0x7f080012;
-        public static final int title=0x7f08000d;
-        public static final int toolbar=0x7f08001b;
-        public static final int url=0x7f08001c;
-        public static final int year=0x7f080022;
+        public static int autofill_popup_window=0x7f090000;
+        public static int autofill_sublabel=0x7f090003;
+        public static int color_picker_advanced=0x7f090008;
+        public static int color_picker_simple=0x7f09000a;
+        public static int color_picker_simple_border=0x7f090009;
+        public static int container=0x7f090019;
+        public static int contentview_holder=0x7f09001e;
+        public static int date_picker=0x7f090010;
+        public static int gradient=0x7f090006;
+        public static int gradient_border=0x7f090005;
+        public static int hour=0x7f090012;
+        public static int milli=0x7f090017;
+        public static int minute=0x7f090013;
+        public static int more_colors_button=0x7f09000c;
+        public static int more_colors_button_border=0x7f09000b;
+        public static int next=0x7f09001d;
+        public static int pickers=0x7f09001f;
+        public static int position_in_year=0x7f090020;
+        public static int prev=0x7f09001c;
+        public static int second=0x7f090015;
+        public static int second_colon=0x7f090014;
+        public static int second_dot=0x7f090016;
+        public static int seek_bar=0x7f090007;
+        public static int select_action_menu_copy=0x7f090024;
+        public static int select_action_menu_cut=0x7f090023;
+        public static int select_action_menu_paste=0x7f090025;
+        public static int select_action_menu_select_all=0x7f090022;
+        public static int select_action_menu_share=0x7f090026;
+        public static int select_action_menu_web_search=0x7f090027;
+        public static int selected_color_view=0x7f09000f;
+        public static int selected_color_view_border=0x7f09000e;
+        public static int text=0x7f090004;
+        public static int time_picker=0x7f090011;
+        public static int title=0x7f09000d;
+        public static int toolbar=0x7f09001a;
+        public static int url=0x7f09001b;
+        public static int year=0x7f090021;
     }
     public static final class layout {
-        public static final int autofill_text=0x7f030000;
-        public static final int color_picker_advanced_component=0x7f030001;
-        public static final int color_picker_dialog_content=0x7f030002;
-        public static final int color_picker_dialog_title=0x7f030003;
-        public static final int content_shell_activity=0x7f030004;
-        public static final int date_time_picker_dialog=0x7f030005;
-        public static final int multi_field_time_picker_dialog=0x7f030006;
-        public static final int shell_view=0x7f030007;
-        public static final int two_field_date_picker=0x7f030008;
+        public static int autofill_text=0x7f040000;
+        public static int color_picker_advanced_component=0x7f040001;
+        public static int color_picker_dialog_content=0x7f040002;
+        public static int color_picker_dialog_title=0x7f040003;
+        public static int date_time_picker_dialog=0x7f040004;
+        public static int multi_field_time_picker_dialog=0x7f040005;
+        public static int shell_view=0x7f040006;
+        public static int two_field_date_picker=0x7f040007;
+    }
+    public static final class menu {
+        public static int select_action_menu=0x7f0a0000;
+    }
+    public static final class mipmap {
+        public static int app_icon=0x7f030000;
     }
     public static final class string {
-        public static final int accessibility_content_view=0x7f04000b;
-        public static final int accessibility_date_picker_month=0x7f04001a;
-        public static final int accessibility_date_picker_week=0x7f04001b;
-        public static final int accessibility_date_picker_year=0x7f04001c;
-        public static final int accessibility_datetime_picker_date=0x7f040018;
-        public static final int accessibility_datetime_picker_time=0x7f040019;
-        public static final int accessibility_time_picker_ampm=0x7f040021;
-        public static final int accessibility_time_picker_hour=0x7f04001d;
-        public static final int accessibility_time_picker_milli=0x7f040020;
-        public static final int accessibility_time_picker_minute=0x7f04001e;
-        public static final int accessibility_time_picker_second=0x7f04001f;
-        public static final int actionbar_share=0x7f040009;
-        public static final int actionbar_web_search=0x7f04000a;
-        public static final int browser_process_initialization_failed=0x7f040028;
-        public static final int color_picker_button_cancel=0x7f040007;
-        public static final int color_picker_button_more=0x7f040002;
-        public static final int color_picker_button_set=0x7f040006;
-        public static final int color_picker_dialog_title=0x7f040008;
-        public static final int color_picker_hue=0x7f040003;
-        public static final int color_picker_saturation=0x7f040004;
-        public static final int color_picker_value=0x7f040005;
-        public static final int date_picker_dialog_clear=0x7f04000d;
-        public static final int date_picker_dialog_set=0x7f04000c;
-        public static final int date_picker_dialog_title=0x7f04000e;
-        public static final int date_time_picker_dialog_title=0x7f04000f;
-        public static final int low_memory_error=0x7f040000;
-        public static final int media_player_error_button=0x7f040025;
-        public static final int media_player_error_text_invalid_progressive_playback=0x7f040023;
-        public static final int media_player_error_text_unknown=0x7f040024;
-        public static final int media_player_error_title=0x7f040022;
-        public static final int media_player_loading_video=0x7f040026;
-        public static final int month_picker_dialog_title=0x7f040016;
-        public static final int opening_file_error=0x7f040001;
-        public static final int time_picker_dialog_am=0x7f040011;
-        public static final int time_picker_dialog_hour_minute_separator=0x7f040013;
-        public static final int time_picker_dialog_minute_second_separator=0x7f040014;
-        public static final int time_picker_dialog_pm=0x7f040012;
-        public static final int time_picker_dialog_second_subsecond_separator=0x7f040015;
-        public static final int time_picker_dialog_title=0x7f040010;
-        /**  THESE ARE HAND MERGED UNTIL WE CAN AUTOMATE THIS PROCESS 
-         */
-        public static final int url_hint=0x7f040027;
-        public static final int week_picker_dialog_title=0x7f040017;
+        public static int accessibility_content_view=0x7f05000b;
+        public static int accessibility_date_picker_month=0x7f05001a;
+        public static int accessibility_date_picker_week=0x7f05001b;
+        public static int accessibility_date_picker_year=0x7f05001c;
+        public static int accessibility_datetime_picker_date=0x7f050018;
+        public static int accessibility_datetime_picker_time=0x7f050019;
+        public static int accessibility_time_picker_ampm=0x7f050021;
+        public static int accessibility_time_picker_hour=0x7f05001d;
+        public static int accessibility_time_picker_milli=0x7f050020;
+        public static int accessibility_time_picker_minute=0x7f05001e;
+        public static int accessibility_time_picker_second=0x7f05001f;
+        public static int actionbar_share=0x7f050009;
+        public static int actionbar_web_search=0x7f05000a;
+        public static int color_picker_button_cancel=0x7f050007;
+        public static int color_picker_button_more=0x7f050002;
+        public static int color_picker_button_set=0x7f050006;
+        public static int color_picker_dialog_title=0x7f050008;
+        public static int color_picker_hue=0x7f050003;
+        public static int color_picker_saturation=0x7f050004;
+        public static int color_picker_value=0x7f050005;
+        public static int date_picker_dialog_clear=0x7f05000d;
+        public static int date_picker_dialog_set=0x7f05000c;
+        public static int date_picker_dialog_title=0x7f05000e;
+        public static int date_time_picker_dialog_title=0x7f05000f;
+        public static int low_memory_error=0x7f050000;
+        public static int media_player_error_button=0x7f050025;
+        public static int media_player_error_text_invalid_progressive_playback=0x7f050023;
+        public static int media_player_error_text_unknown=0x7f050024;
+        public static int media_player_error_title=0x7f050022;
+        public static int media_player_loading_video=0x7f050026;
+        public static int month_picker_dialog_title=0x7f050016;
+        public static int opening_file_error=0x7f050001;
+        public static int profiler_error_toast=0x7f05002a;
+        public static int profiler_no_storage_toast=0x7f050029;
+        public static int profiler_started_toast=0x7f050027;
+        public static int profiler_stopped_toast=0x7f050028;
+        public static int time_picker_dialog_am=0x7f050011;
+        public static int time_picker_dialog_hour_minute_separator=0x7f050013;
+        public static int time_picker_dialog_minute_second_separator=0x7f050014;
+        public static int time_picker_dialog_pm=0x7f050012;
+        public static int time_picker_dialog_second_subsecond_separator=0x7f050015;
+        public static int time_picker_dialog_title=0x7f050010;
+        public static int url_hint=0x7f05002b;
+        public static int week_picker_dialog_title=0x7f050017;
     }
     public static final class style {
-        public static final int AutofillPopupWindow=0x7f070000;
+        public static int AutofillPopupWindow=0x7f080000;
+        public static int SelectPopupDialog=0x7f080001;
     }
 }

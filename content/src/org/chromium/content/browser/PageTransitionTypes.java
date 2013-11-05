@@ -1,9 +1,4 @@
-
-
-
-
 package org.chromium.content.browser;
-
 public class PageTransitionTypes {
 public static final int PAGE_TRANSITION_LINK = 0;
 public static final int PAGE_TRANSITION_TYPED = 1;

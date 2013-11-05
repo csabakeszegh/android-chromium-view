@@ -8,3 +8,6 @@ export PROJ=$ACV_HOME/media
 rm -rf $PROJ/src/org/chromium/media/*
 
 scp -r $BUILD/media/base/android/java/src/* $PROJ/src/
+scp $BUILD/out/Release/gen/templates/org/chromium/media/ImageFormat.java $PROJ/src/org/chromium/media/
+
+rm $PROJ/src/org/chromium/media/ImageFormat.template

@@ -20,6 +20,28 @@ public final class R {
     
          */
         public static int color_picker_gradient_margin=0x7f060000;
+        /**  Left/right padding for infobar button text. 
+         */
+        public static int infobar_button_horizontal_padding=0x7f060005;
+        /**  Text size of text inside InfoBar buttons. 
+         */
+        public static int infobar_button_text_size=0x7f060002;
+        /**  Dimension (height or width) of the InfoBar icon. 
+         */
+        public static int infobar_icon_size=0x7f060007;
+        /**  Margin between items in an InfoBar. 
+         */
+        public static int infobar_margin=0x7f060004;
+        /**  Minimum dimension (height or width) of the upper row of an InfoBar. 
+         */
+        public static int infobar_min_size=0x7f060003;
+        /**  Infobar dimensions 
+ Text size of the InfoBar message. 
+         */
+        public static int infobar_text_size=0x7f060001;
+        /**  Minimum height for a touch target. 
+         */
+        public static int infobar_touch_target_height=0x7f060006;
     }
     public static final class drawable {
         public static int autofill_popup_background=0x7f020000;
@@ -27,7 +49,6 @@ public final class R {
         public static int autofill_popup_background_up=0x7f020002;
         public static int color_picker_advanced_select_handle=0x7f020003;
         public static int color_picker_border=0x7f020004;
-        public static int divider_horizontal_bright=0x7f020005;
     }
     public static final class id {
         public static int autofill_label=0x7f080002;
