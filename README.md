@@ -1,5 +1,9 @@
 Android Chromium View
 =====================
+
+# Deprecated
+This project is deprecated in favor of [android-chromium](https://github.com/davisford/android-chromium) -- which is a newer build of Chromium using standard Android Gradle integration for project structure, and which also includes the Chromium TestShell target.
+
 # Table Of Contents
 * [Introduction](https://github.com/davisford/android-chromium-view#introduction)
 * [The Why](https://github.com/davisford/android-chromium-view#why)
